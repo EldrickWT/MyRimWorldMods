@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Vancidium Resource</name>
-	<author>Ykara</author>
-	<targetVersion>0.17.1546</targetVersion>
-	<description>Brings Vancium Back... so you can have walls and floor and guns and and and. It's pretty.-Eldrick Tobin</description>
+  <name>Vancidium Resource</name>
+  <author>Eldrick Tobin</author>
+  <targetVersion>0.17.1557</targetVersion>
+  <description>
+    Brings Vancidium Back... so you can have walls and floor and guns and and and. It's pretty.-Eldrick Tobin<p>Originally part of EPOE by Ykara see credits file
+  </description>
 </ModMetaData>

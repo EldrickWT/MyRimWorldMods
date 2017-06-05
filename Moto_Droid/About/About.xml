@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Droid Storytellers</name>
-  <author>EldrickTobin</author>
-  <targetversion>0.17.1546</targetversion>
+  <author>Eldrick Tobin</author>
+  <targetversion>0.17.1557</targetversion>
   <description>
     These storytellers are able to handle quite the colony size before they decide there needs to be a purge of all mobile units. They do each like round numbers, so expect 10 at minimum, but on the far end 100 means it's time to purge. They come in a few programmatic states... even barely formatted.
   </description>
