@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StorytellerDefs>
+
+	<StorytellerDef ParentName="BaseStoryteller">
+		<defName>DroidStern</defName>
+		<label>Droid</label>
+		<description>Quite the colony size can prosper under this program state. This state prefers round numbers of colonists. Ten colonists is a good minimum, and the situation is nominal up to 50. 51-99 can be suffered if needed, but it is time to purge at 100. Stern but Fair.(Cassandra-ish)</description>
+		<portraitLarge>motorola-droid-580x620-blue2</portraitLarge>
+		<portraitTiny>motorola-droid-124x124-blue2</portraitTiny>
+		<listOrder>70</listOrder>
+		<populationIntentFromPopCurve>
+			<points>
+				<li>0, 10</li>
+				<li>10, 4</li>
+				<li>50, 1</li>
+				<li>100, -1</li>
+			</points>
+		</populationIntentFromPopCurve>
+		<comps>
+			<li Class="StorytellerCompProperties_ClassicIntro"/>
+			<li Class="StorytellerCompProperties_ThreatCycle">
+				<minDaysPassed>5</minDaysPassed>
+				<mtbDaysThreatSmall>5.0</mtbDaysThreatSmall>
+				<mtbDaysThreatBig>5.0</mtbDaysThreatBig>
+				<threatOffDays>5.0</threatOffDays>
+				<threatOnDays>5.0</threatOnDays>
+				<minDaysBetweenThreatBigs>5.0</minDaysBetweenThreatBigs>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+				<minDaysPassed>5</minDaysPassed>
+				<category>Misc</category>
+				<mtbDays>2.50</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>World</allowedTargetTypes>
+				<minDaysPassed>15</minDaysPassed>
+				<category>Misc</category>
+				<mtbDays>8</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_AllyInteraction">
+				<minDaysPassed>10</minDaysPassed>
+				<baseMtb>10</baseMtb>
+				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+			</li>
+			<li Class="StorytellerCompProperties_AllyAssistance">
+				<baseMtb>10</baseMtb>
+			</li>
+			<li Class="StorytellerCompProperties_SingleMTB">
+				<incident>OrbitalTraderArrival</incident>
+				<mtbDays>10</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_ShipChunkDrop"/>
+			<li Class="StorytellerCompProperties_Disease">
+				<minDaysPassed>10</minDaysPassed>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>CaravanTarget</category>
+			</li>
+			<li Class="StorytellerCompProperties_JourneyOffer"/>
+		</comps>
+	</StorytellerDef>
+
+	<StorytellerDef ParentName="BaseStoryteller">
+		<defName>DroidSensible</defName>
+		<label>Droid</label>
+		<description>Quite the colony size can prosper under this program state. This state prefers round numbers of colonists. Ten colonists is a good minimum, and the situation is nominal up to 50. 51-99 can be suffered if needed, but it is time to purge at 100. The aim is sensibility. (Phoebe-ish)</description>
+		<portraitLarge>motorola-droid-580x620-green</portraitLarge>
+		<portraitTiny>motorola-droid-124x124-green</portraitTiny>
+		<listOrder>60</listOrder>
+		<populationIntentFromPopCurve>
+			<points>
+				<li>0, 10</li>
+				<li>10, 4</li>
+				<li>50, 1</li>
+				<li>100, -1</li>
+			</points>
+		</populationIntentFromPopCurve>
+		<comps>
+			<li Class="StorytellerCompProperties_ClassicIntro"/>
+			<li Class="StorytellerCompProperties_ThreatCycle">
+				<minDaysPassed>5</minDaysPassed>
+				<mtbDaysThreatSmall>10</mtbDaysThreatSmall>
+				<mtbDaysThreatBig>10</mtbDaysThreatBig>
+				<threatOffDays>10</threatOffDays>
+				<threatOnDays>10</threatOnDays>
+				<minDaysBetweenThreatBigs>15</minDaysBetweenThreatBigs>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+				<minDaysPassed>5</minDaysPassed>
+				<category>Misc</category>
+				<mtbDays>2.50</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>World</allowedTargetTypes>
+				<minDaysPassed>15</minDaysPassed>
+				<category>Misc</category>
+				<mtbDays>8</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_AllyInteraction">
+				<minDaysPassed>10</minDaysPassed>
+				<baseMtb>10</baseMtb>
+				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+			</li>
+			<li Class="StorytellerCompProperties_AllyAssistance">
+				<baseMtb>10</baseMtb>
+			</li>
+			<li Class="StorytellerCompProperties_SingleMTB">
+				<incident>OrbitalTraderArrival</incident>
+				<mtbDays>10</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_ShipChunkDrop"/>
+			<li Class="StorytellerCompProperties_Disease">
+				<minDaysPassed>10</minDaysPassed>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>CaravanTarget</category>
+			</li>
+			<li Class="StorytellerCompProperties_JourneyOffer"/>
+		</comps>
+	</StorytellerDef>
+
+	<StorytellerDef ParentName="BaseStoryteller">
+		<defName>DroidAggressive</defName>
+		<label>Droid</label>
+		<description>Quite the colony size can prosper under this program state. This state prefers round numbers of colonists. Ten colonists is a good minimum, and the situation is nominal up to 50. 51-99 can be suffered if needed, but it is time to purge at 100. Pray to the Random Number God.</description>
+		<portraitLarge>motorola-droid-580x620-blue</portraitLarge>
+		<portraitTiny>motorola-droid-124x124-blue</portraitTiny>
+		<listOrder>80</listOrder>
+		<populationIntentFromPopCurve>
+			<points>
+				<li>0, 10</li>
+				<li>10, 4</li>
+				<li>50, 1</li>
+				<li>100, -1</li>
+			</points>
+		</populationIntentFromPopCurve>
+		<comps>
+			<li Class="StorytellerCompProperties_RandomMain">
+				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+				<minDaysPassed>1</minDaysPassed>
+				<mtbDays>1.0</mtbDays>
+				<maxThreatBigIntervalDays>1</maxThreatBigIntervalDays>
+				<categoryWeights>
+					<Misc>5.0</Misc>
+					<OrbitalVisitor>1.0</OrbitalVisitor>
+					<ThreatBig>1.0</ThreatBig>
+					<ThreatSmall>1.0</ThreatSmall>
+					<AllyArrival>1.0</AllyArrival>
+					<AllyAssistance>1.0</AllyAssistance>
+					<ShipChunkDrop>1.0</ShipChunkDrop>
+				</categoryWeights>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>World</allowedTargetTypes>
+				<minDaysPassed>1</minDaysPassed>
+				<category>Misc</category>
+				<mtbDays>8</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_Disease">
+				<minDaysPassed>0</minDaysPassed>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>CaravanTarget</category>
+			</li>
+			<li Class="StorytellerCompProperties_JourneyOffer"/>
+		</comps>
+		<listVisible>true</listVisible>
+	</StorytellerDef>
+
+	<StorytellerDef ParentName="BaseStoryteller">
+		<defName>DroidHostile</defName>
+		<label>Droid</label>
+		<description>Quite the colony size can prosper under this program state. This state prefers round numbers of colonists. Ten colonists is a good minimum, and the situation is nominal up to 50. 51-99 can be suffered if needed, but it is time to purge at 100. This state is hostile to you and your colony. (Bastard Child of Lovecraft Storyteller and Rampant Cortana Staoryteller (Neither Included in this mod)) </description>
+		<portraitLarge>motorola-droid-580x620-danger</portraitLarge>
+		<portraitTiny>motorola-droid-124x124-danger</portraitTiny>
+		<listOrder>90</listOrder>
+		<populationIntentFromPopCurve>
+			<points>
+				<li>0, 10</li>
+				<li>10, 4</li>
+				<li>50, 1</li>
+				<li>100, -1</li>
+			</points>
+		</populationIntentFromPopCurve>
+		<comps>
+			<li Class="StorytellerCompProperties_ClassicIntro"/>
+			<li Class="StorytellerCompProperties_ThreatCycle">
+				<minDaysPassed>5</minDaysPassed>
+				<mtbDaysThreatSmall>1</mtbDaysThreatSmall>
+				<mtbDaysThreatBig>1</mtbDaysThreatBig>
+				<threatOffDays>1</threatOffDays>
+				<threatOnDays>1</threatOnDays>
+				<minDaysBetweenThreatBigs>1</minDaysBetweenThreatBigs>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+				<minDaysPassed>5</minDaysPassed>
+				<category>Misc</category>
+				<mtbDays>2.50</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>World</allowedTargetTypes>
+				<minDaysPassed>15</minDaysPassed>
+				<category>Misc</category>
+				<mtbDays>8</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_AllyInteraction">
+				<minDaysPassed>10</minDaysPassed>
+				<baseMtb>10</baseMtb>
+				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+			</li>
+			<li Class="StorytellerCompProperties_AllyAssistance">
+				<baseMtb>10</baseMtb>
+			</li>
+			<li Class="StorytellerCompProperties_SingleMTB">
+				<incident>OrbitalTraderArrival</incident>
+				<mtbDays>10</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_ShipChunkDrop"/>
+			<li Class="StorytellerCompProperties_Disease">
+				<minDaysPassed>1</minDaysPassed>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>CaravanTarget</category>
+			</li>
+			<li Class="StorytellerCompProperties_JourneyOffer"/>
+		</comps>
+	</StorytellerDef>
+
+	<StorytellerDef ParentName="BaseStoryteller">
+		<defName>DroidBase</defName>
+		<label>Droid</label>
+		<description>Quite the colony size can prosper under this program state. This state is still learning, and is considered a _template_. It can be activated if desired, but might not DO anything.</description>
+		<portraitLarge>motorola-droid-580x620-grey</portraitLarge>
+		<portraitTiny>motorola-droid-124x124-grey</portraitTiny>
+		<listOrder>555</listOrder>
+		<populationIntentFromPopCurve>
+			<points>
+				<li>0, 0</li>
+			</points>
+		</populationIntentFromPopCurve>
+		<comps>
+		</comps>
+		<listVisible>true</listVisible>
+	</StorytellerDef>
+</StorytellerDefs>
